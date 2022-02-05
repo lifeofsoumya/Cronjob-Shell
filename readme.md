@@ -1,3 +1,6 @@
+## What is CronJob?
+A Cron job is a Linux command used for scheduling tasks to be executed sometime in the future. It can be used to perform certain tasks automatically on linux environment with precise timing.
+
 ### Pulling the cronjob on your device
 ```
 wget https://github.com/lifeofsoumya/Cronjob-Shell/blob/master/cronjob.sh
