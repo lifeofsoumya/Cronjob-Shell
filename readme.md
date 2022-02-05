@@ -1,11 +1,13 @@
 ### Pulling the cronjob on your device
 ```
-wget 
+wget https://github.com/lifeofsoumya/Cronjob-Shell/blob/master/cronjob.sh
 ```
 ### Editing the cronjob
 ```
 nano cronjob.sh
 ```
+
+## Guide to edit CronJob 💡
 
 ### Open crontab editor
 ```
@@ -37,15 +39,16 @@ m h dom mon dow command
 0 10 * * 1 tar -cvf my_backup_path\my_archive.tar.gz $HOME\
 ```
 
+### To run CronJob every five minutes
+```
+*/5 * * * * ./cronJob.sh
+```
+
 ### list all cron jobs
 ```
 crontab -l
 ```
 
-### To run CronJob every five minutes
-```
-  */5 * * * * ./cronJob.sh
-```
 
 
 
