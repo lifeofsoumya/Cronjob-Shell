@@ -2,6 +2,10 @@
 ```
 wget https://github.com/lifeofsoumya/Cronjob-Shell/blob/master/cronjob.sh
 ```
+### Making sure the script is executable
+```
+sudo chmod +x cronjob.sh
+```
 ### Editing the cronjob
 ```
 nano cronjob.sh
