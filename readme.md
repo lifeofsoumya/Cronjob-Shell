@@ -1,22 +1,56 @@
-# open crontab editor
+### Pulling the cronjob on your device
+```
+wget 
+```
+### Editing the cronjob
+```
+nano cronjob.sh
+```
+
+### Open crontab editor
+```
 crontab -e
+```
 
-# job scheduling syntax
+### Scheduling syntax
+```
 m h dom mon dow command
-minute, hour, day of month, month, day of week
-* means any
+```
 
-# append the date/time to file every Sunday at 6:15 pm
+[ minute, hour, day of month, month, day of week ]
+
+*(* * *)* means any
+*(* / *)*	step values
+
+### Append the date/time to file every Sunday at 6:15 pm
+```
 15 18 * * 0 date >> sundays.txt
+```
 
-# run a shell script on the first minute of the first day of each month
-1 0 1 * * ./My_Shell_Script.sh
+### Run a shell script on the first minute of the first day of each month
+```
+1 0 1 * * ./cronJob.sh
+```
 
-# back up your home directory every Monday at 3 am
-0 3 * * 1 tar -cvf my_backup_path\my_archive.tar.gz $HOME\
+### Back up your home directory every Monday at 10 am
+```
+0 10 * * 1 tar -cvf my_backup_path\my_archive.tar.gz $HOME\
+```
 
-# deploy your cron job
-Close the crontab editor and save the file
-
-# list all cron jobs
+### list all cron jobs
+```
 crontab -l
+```
+
+### To run CronJob every five minutes
+```
+  */5 * * * * ./cronJob.sh
+```
+
+
+
+### Running CronJob on server ☁️ 
+Cronjob can be launched over Google Cloud Platform / Amazon Web Services
+
+
+
